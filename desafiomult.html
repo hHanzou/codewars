@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1</title>
+
+    <script>
+
+    function desafio (num){
+        
+        strResultado = String(num).length
+
+        var resultado = num
+
+        var count = 0
+
+        for(a = strResultado; a > 1; a = lAtual){
+                
+                lista = Array.from(String(resultado), Number)
+
+                quant = lista.length
+
+                var neoResultado = 1
+
+                for(i = 0; i < quant; i++ ){
+
+                    neoResultado = neoResultado * lista[i]
+
+                }
+
+                lAtual = String(neoResultado).length
+
+                resultado = neoResultado
+
+                count++
+
+            }
+
+            return count
+
+        }
+
+
+    teste = desafio(999)
+
+    console.log(teste)
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

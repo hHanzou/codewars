@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+
+        function banana(word) {
+            word = word.toLowerCase().split('')
+            for (i = 0, rr = []; i < word.length; i++){
+                if(word.indexOf(word[i]) == word.lastIndexOf(word[i])){
+                }else{
+                    rr += word[i]
+                }
+            }
+            rr = rr.split('').filter((item, index) => rr.indexOf(item) === index)
+
+            return rr.length
+        }
+
+        let a = banana('aabbc')
+
+        console.log(a)
+
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

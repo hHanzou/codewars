@@ -1,0 +1,1 @@
+const areYouPlayingBanjo = (name) => name[0].toLowerCase() != 'r' ? name + ' does not play banjo' : name + ' plays banjo' 
